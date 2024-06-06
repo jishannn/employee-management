@@ -5,7 +5,7 @@ import Employees from "./pages/Employees";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/employee-management">
       <div>
         <nav>
           <ul>
@@ -19,7 +19,7 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} index />
           <Route path="/employees" element={<Employees />} />
         </Routes>
       </div>
